@@ -60,7 +60,7 @@
             </div>
           </li>
           <li class="sidebar-list">
-            <a class="sidebar-link sidebar-title link-nav" href="withdrawal-settings"><i data-feather="home"></i><span>Pay Pension</span></a>
+            <a class="sidebar-link sidebar-title link-nav" href="pay-pension"><i data-feather="home"></i><span>Pay Pension</span></a>
           </li>
           <li class="sidebar-list">
             <a class="sidebar-link sidebar-title link-nav" href="pension-records"><i data-feather="home"></i><span>Pension Records</span></a>

@@ -18,8 +18,6 @@
     <div class="page-wrapper compact-wrapper" id="pageWrapper">
         <!-- Page Header Start-->
         <?php include "includes/header.php"; ?>
-        <!-- Page Header Ends                              -->
-        <!-- Page Body Start-->
         <div class="page-body-wrapper">
             <!-- Page Sidebar Start-->
             <?php include "includes/sidebar.php"; ?>
@@ -44,6 +42,30 @@
                 <!-- Container-fluid starts-->
                 <div class="container-fluid">
                     <div class="row">
+                        <div class="col-sm-12 col-md-8" id="new-staff-terms" style="display: none;">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h5>Pension Terms</h5>
+                                </div>
+                                <div class="card-body">
+                                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+
+                                    <form method="POST" action="#">
+                                        <div class="form-group">
+                                            <label class="col-form-label"><b>Current Salary</b></label>
+                                            <input type="text" required="required" class="form-control" />
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-form-label"><b>Percentage for Pension</b></label>
+                                            <input type="text" required="required" class="form-control" />
+                                        </div>
+                                        <div class="text-center mt-5">
+                                            <button class="btn btn-primary add-loader" type="submit" name="submit">Submit</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
                         <div class="col-sm-12 col-md-12" id="form-card">
                             <div class="card">
                                 <div class="card-header">
@@ -108,11 +130,11 @@
                                 <div class="card-footer row">
                                     <div class="col-6">
                                         <h6>Accept</h6>
-                                        <a href="#" class="btn btn-primary add-loader confirm">YES</a>
+                                        <button id="accept-staff-btn" class="btn btn-primary">YES</button>
                                     </div>
                                     <div class="col-6">
                                         <h6>Profile</h6>
-                                        <a href="employee-profile" class="btn btn-warning">VIEW</a>
+                                        <a target="_blank" href="employee-profile" class="btn btn-warning">VIEW</a>
                                     </div>
                                 </div>
                             </div>
@@ -167,7 +189,7 @@
                         //   TODO: TO BE DELETED   
                         timeOutLoader(() => {
                             $('#fetch-loader').slideUp('slow', () => {
-                                if (0 === 0) {
+                                if (1 === 0) {
                                     $('#no-result-found-card').slideDown();
                                 } else {
                                     $('#employee-profile-card').slideDown();
@@ -177,7 +199,13 @@
                         })
                     }
                 })
-            })
+            });
+
+            $('#accept-staff-btn').click(function() {
+                $('#form-card').slideUp('slow', function() {
+                    $('#new-staff-terms').slideDown();
+                })
+            });
 
             function timeOutLoader(fn) {
                 let counter = 0;

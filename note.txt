@@ -1,1 +1,4 @@
 delay pension payment processing...
+
+dob to determine retirement
+salary, pension percentage from salary

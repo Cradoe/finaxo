@@ -79,7 +79,7 @@
                                                     </div>
                                                     <div class="col-md-6">
                                                         <div class="ttl-info text-start">
-                                                            <h6><i class="fa fa-location-arrow"></i>   Location</h6><span>B69 Near Schoool Demo Home</span>
+                                                            <h6><i class="fa fa-location-arrow"></i>   Pension</h6><span>20% of &#8358;3,000</span>
                                                         </div>
                                                     </div>
                                                 </div>

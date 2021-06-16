@@ -77,8 +77,6 @@
 
         <!-- Sidebar jquery-->
         <script src="../assets/js/config.js"></script>
-        <!-- Plugins JS start-->
-        <!-- Plugins JS Ends-->
         <!-- Theme js-->
         <script src="../assets/js/script.js"></script>
         <!-- login js-->

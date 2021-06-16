@@ -23,6 +23,9 @@
 
           </li>
 
+          <li class="sidebar-list">
+            <a class="sidebar-link sidebar-title link-nav" href="departments"><i data-feather="home"></i><span>Departments</span></a>
+          </li>
           <li class="sidebar-main-title">
             <div>
               <h6 class="lan-8">Companies</h6>
@@ -38,18 +41,8 @@
           <li class="sidebar-list">
             <a class="sidebar-link sidebar-title link-nav" href="companies"><i data-feather="home"></i><span>View Comapnies</span></a>
           </li>
-          <li class="sidebar-main-title">
-            <div>
-              <h6 class="lan-8">Company</h6>
-              <p class="lan-9">Manage your employees</p>
-            </div>
-          </li>
-
           <li class="sidebar-list">
-            <a class="sidebar-link sidebar-title link-nav" href="new-department"><i data-feather="home"></i><span>New Department</span></a>
-          </li>
-          <li class="sidebar-list">
-            <a class="sidebar-link sidebar-title link-nav" href="departments"><i data-feather="home"></i><span>Departments</span></a>
+            <a class="sidebar-link sidebar-title link-nav" href="pension-transactions"><i data-feather="home"></i><span>Pension Transations</span></a>
           </li>
 
           </li>
@@ -60,10 +53,7 @@
             </div>
           </li>
           <li class="sidebar-list">
-            <a class="sidebar-link sidebar-title link-nav" href="pay-pension"><i data-feather="home"></i><span>Pay Pension</span></a>
-          </li>
-          <li class="sidebar-list">
-            <a class="sidebar-link sidebar-title link-nav" href="pension-records"><i data-feather="home"></i><span>Pension Records</span></a>
+            <a class="sidebar-link sidebar-title link-nav" href="pension-transactions"><i data-feather="home"></i><span>Pension Transations</span></a>
           </li>
           <li class="sidebar-main-title">
             <div>

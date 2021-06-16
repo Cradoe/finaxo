@@ -1,16 +1,16 @@
 // greeting
 var today = new Date()
-var curHr = today.getHours()
+    // var curHr = today.getHours()
 
-if (curHr >= 0 && curHr < 4) {
-    document.getElementById("greeting").innerHTML = 'Good Night';
-} else if (curHr >= 4 && curHr < 12) {
-    document.getElementById("greeting").innerHTML = 'Good Morning';
-} else if (curHr >= 12 && curHr < 16) {
-    document.getElementById("greeting").innerHTML = 'Good Afternoon';
-} else {
-    document.getElementById("greeting").innerHTML = 'Good Evening';
-}
+// if (curHr >= 0 && curHr < 4) {
+//     document.getElementById("greeting").innerHTML = 'Good Night';
+// } else if (curHr >= 4 && curHr < 12) {
+//     document.getElementById("greeting").innerHTML = 'Good Morning';
+// } else if (curHr >= 12 && curHr < 16) {
+//     document.getElementById("greeting").innerHTML = 'Good Afternoon';
+// } else {
+//     document.getElementById("greeting").innerHTML = 'Good Evening';
+// }
 // time 
 function startTime() {
     var today = new Date();
@@ -26,8 +26,9 @@ function startTime() {
         h + ":" + m + ' ' + ampm;
     var t = setTimeout(startTime, 500);
 }
+
 function checkTime(i) {
-    if (i < 10) { i = "0" + i };  // add zero in front of numbers < 10
+    if (i < 10) { i = "0" + i }; // add zero in front of numbers < 10
     return i;
 }
 
@@ -74,7 +75,7 @@ var options = {
     markers: {
         strokeWidth: 3,
         colors: "#ffffff",
-        strokeColors: [ CubaAdminConfig.primary , CubaAdminConfig.secondary ],
+        strokeColors: [CubaAdminConfig.primary, CubaAdminConfig.secondary],
         hover: {
             size: 6,
         }
@@ -104,7 +105,7 @@ var options = {
             top: -40
         }
     },
-    colors: [ CubaAdminConfig.primary , CubaAdminConfig.secondary ],
+    colors: [CubaAdminConfig.primary, CubaAdminConfig.secondary],
     fill: {
         type: 'gradient',
         gradient: {
@@ -154,11 +155,11 @@ new Chartist.Bar('.small-chart', {
         showGrid: false,
         showLabel: false,
         offset: 0,
-        labelInterpolationFnc: function (value) {
+        labelInterpolationFnc: function(value) {
             return (value / 1000) + 'k';
         }
     }
-}).on('draw', function (data) {
+}).on('draw', function(data) {
     if (data.type === 'bar') {
         data.element.attr({
             style: 'stroke-width: 3px'
@@ -192,11 +193,11 @@ new Chartist.Bar('.small-chart1', {
         showGrid: false,
         showLabel: false,
         offset: 0,
-        labelInterpolationFnc: function (value) {
+        labelInterpolationFnc: function(value) {
             return (value / 1000) + 'k';
         }
     }
-}).on('draw', function (data) {
+}).on('draw', function(data) {
     if (data.type === 'bar') {
         data.element.attr({
             style: 'stroke-width: 3px'
@@ -229,11 +230,11 @@ new Chartist.Bar('.small-chart2', {
         showGrid: false,
         showLabel: false,
         offset: 0,
-        labelInterpolationFnc: function (value) {
+        labelInterpolationFnc: function(value) {
             return (value / 1000) + 'k';
         }
     }
-}).on('draw', function (data) {
+}).on('draw', function(data) {
     if (data.type === 'bar') {
         data.element.attr({
             style: 'stroke-width: 3px'
@@ -265,11 +266,11 @@ new Chartist.Bar('.small-chart3', {
         showGrid: false,
         showLabel: false,
         offset: 0,
-        labelInterpolationFnc: function (value) {
+        labelInterpolationFnc: function(value) {
             return (value / 1000) + 'k';
         }
     }
-}).on('draw', function (data) {
+}).on('draw', function(data) {
     if (data.type === 'bar') {
         data.element.attr({
             style: 'stroke-width: 3px'
@@ -279,7 +280,7 @@ new Chartist.Bar('.small-chart3', {
 
 // right-side-small-chart
 
-(function ($) {
+(function($) {
     "use strict";
     $(".knob1").knob({
 
@@ -287,28 +288,29 @@ new Chartist.Bar('.small-chart3', {
         'height': 65,
         'max': 100,
 
-        change: function (value) {
+        change: function(value) {
             //console.log("change : " + value);
         },
-        release: function (value) {
+        release: function(value) {
             //console.log(this.$.attr('value'));
             console.log("release : " + value);
         },
-        cancel: function () {
+        cancel: function() {
             console.log("cancel : ", this);
         },
-        format: function (value) {
+        format: function(value) {
             return value + '%';
         },
-        draw: function () {
+        draw: function() {
 
             // "tron" case
             if (this.$.data('skin') == 'tron') {
 
                 this.cursorExt = 1;
 
-                var a = this.arc(this.cv)  // Arc
-                    , pa                   // Previous arc
+                var a = this.arc(this.cv) // Arc
+                    ,
+                    pa // Previous arc
                     , r = 1;
 
                 this.g.lineWidth = this.lineWidth;
@@ -337,33 +339,48 @@ new Chartist.Bar('.small-chart3', {
         }
     });
     // Example of infinite knob, iPod click wheel
-    var v, up = 0, down = 0, i = 0
-        , $idir = $("div.idir")
-        , $ival = $("div.ival")
-        , incr = function () { i++; $idir.show().html("+").fadeOut(); $ival.html(i); }
-        , decr = function () { i--; $idir.show().html("-").fadeOut(); $ival.html(i); };
-    $("input.infinite").knob(
-        {
-            min: 0
-            , max: 20
-            , stopper: false
-            , change: function () {
-                if (v > this.cv) {
-                    if (up) {
-                        decr();
-                        up = 0;
-                    } else { up = 1; down = 0; }
+    var v, up = 0,
+        down = 0,
+        i = 0,
+        $idir = $("div.idir"),
+        $ival = $("div.ival"),
+        incr = function() {
+            i++;
+            $idir.show().html("+").fadeOut();
+            $ival.html(i);
+        },
+        decr = function() {
+            i--;
+            $idir.show().html("-").fadeOut();
+            $ival.html(i);
+        };
+    $("input.infinite").knob({
+        min: 0,
+        max: 20,
+        stopper: false,
+        change: function() {
+            if (v > this.cv) {
+                if (up) {
+                    decr();
+                    up = 0;
                 } else {
-                    if (v < this.cv) {
-                        if (down) {
-                            incr();
-                            down = 0;
-                        } else { down = 1; up = 0; }
+                    up = 1;
+                    down = 0;
+                }
+            } else {
+                if (v < this.cv) {
+                    if (down) {
+                        incr();
+                        down = 0;
+                    } else {
+                        down = 1;
+                        up = 0;
                     }
                 }
-                v = this.cv;
             }
-        });
+            v = this.cv;
+        }
+    });
 })(jQuery);
 
 // market value chart
@@ -391,12 +408,12 @@ var options1 = {
                 fill: {
                     colors: ['#fcf8ff', '#f7eeff']
                 },
-                
+
             }
         }
     },
-    colors: [ CubaAdminConfig.primary ],
-    
+    colors: [CubaAdminConfig.primary],
+
     markers: {
         size: 6,
         colors: ['#fff'],
@@ -407,14 +424,14 @@ var options1 = {
         y: {
             formatter: function(val) {
                 return val
-            }   
+            }
         }
     },
     yaxis: {
         tickAmount: 7,
         labels: {
             formatter: function(val, i) {
-                if(i % 2 === 0) {
+                if (i % 2 === 0) {
                     return val
                 } else {
                     return ''

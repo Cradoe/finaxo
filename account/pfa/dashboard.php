@@ -26,13 +26,13 @@
             <div class="row">
               <div class="col-6">
                 <h3>
-                  Flexidink</h3>
+                  Dashboard</h3>
               </div>
               <div class="col-6">
                 <ol class="breadcrumb">
                   <li class="breadcrumb-item"><a href="index.html"><i data-feather="home"></i></a></li>
                   <li class="breadcrumb-item">Dashboard</li>
-                  <li class="breadcrumb-item active">Flexidink</li>
+                  <li class="breadcrumb-item active">Dashboard</li>
                 </ol>
               </div>
             </div>
@@ -41,7 +41,72 @@
         <!-- Container-fluid starts-->
         <div class="container-fluid">
           <div class="row size-column">
-            <div class="col-xl-3 risk-col xl-100 box-col-12">
+            <div class=" xl-100 chart_data_left box-col-12">
+              <div class="card">
+                <div class="card-body p-0">
+                  <div class="row m-0 chart-main">
+                    <div class="col-xl-3 col-md-6 col-sm-6 p-0 box-col-6">
+                      <div class="media align-items-center">
+                        <div class="hospital-small-chart">
+                          <div class="small-bar">
+                            <div class="small-chart flot-chart-container"></div>
+                          </div>
+                        </div>
+                        <div class="media-body">
+                          <div class="right-chart-content">
+                            <h4>1001</h4><span>Companies </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6 col-sm-6 p-0 box-col-6">
+                      <div class="media align-items-center">
+                        <div class="hospital-small-chart">
+                          <div class="small-bar">
+                            <div class="small-chart1 flot-chart-container"></div>
+                          </div>
+                        </div>
+                        <div class="media-body">
+                          <div class="right-chart-content">
+                            <h4>1005</h4><span>Employees</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6 col-sm-6 p-0 box-col-6">
+                      <div class="media align-items-center">
+                        <div class="hospital-small-chart">
+                          <div class="small-bar">
+                            <div class="small-chart2 flot-chart-container"></div>
+                          </div>
+                        </div>
+                        <div class="media-body">
+                          <div class="right-chart-content">
+                            <h4>0</h4><span>Frauds Detected</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6 col-sm-6 p-0 box-col-6">
+                      <div class="media border-none align-items-center">
+                        <div class="hospital-small-chart">
+                          <div class="small-bar">
+                            <div class="small-chart3 flot-chart-container"></div>
+                          </div>
+                        </div>
+                        <div class="media-body">
+                          <div class="right-chart-content">
+                            <h4>101</h4><span>Purchase ret</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="risk-col xl-100 box-col-12">
               <div class="card total-users">
                 <div class="card-header card-no-border">
                   <h5>At a Glance</h5>
@@ -60,7 +125,7 @@
                             <h6 class="f-w-400">24 March 2021</h6>
                           </li>
                           <li>
-                            <h6 class="mb-2 f-w-400">Total Staffs</h6>
+                            <h6 class="mb-2 f-w-400">Total Transations</h6>
                             <h5 class="mb-0">7977</h5>
                           </li>
                         </ul>
@@ -69,13 +134,13 @@
                     <ul class="col-xl-12">
                       <li>
                         <div class="goal-detail">
-                          <h6> <span class="font-primary">Pension Archive : </span>&#8358;91,000.000</h6>
+                          <h6> <span class="font-primary">Pension Received : </span>&#8358;91,000.000</h6>
                           <div class="progress sm-progress-bar progress-animate">
                             <div class="progress-gradient-primary" role="progressbar" style="width: 60%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
                           </div>
                         </div>
                         <div class="goal-detail mb-0">
-                          <h6><span class="font-primary">Duration: </span>9 Month</h6>
+                          <h6><span class="font-primary">Payouts: </span>&#8358;91,000.000</h6>
                           <div class="progress sm-progress-bar progress-animate">
                             <div class="progress-gradient-primary" role="progressbar" style="width: 50%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
                           </div>
@@ -87,6 +152,76 @@
                     </ul>
                   </div>
 
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 appointment-sec box-col-6">
+              <div class="row">
+                <div class="col-xl-12 appointment">
+                  <div class="card">
+                    <div class="card-header card-no-border">
+                      <div class="header-top">
+                        <h5 class="m-0">Credits</h5>
+                      </div>
+                    </div>
+                    <div class="card-body pt-0">
+                      <div class="appointment-table table-responsive">
+                        <table class="table table-bordernone">
+                          <tbody>
+                            <tr>
+                              <td><img class="img-fluid img-40 rounded-circle mb-3" src="../assets/images/appointment/app-ent.jpg" alt="Image description">
+                                <div class="status-circle bg-primary"></div>
+                              </td>
+                              <td class="img-content-box"><span class="d-block">Venter Loren</span><span class="font-roboto">22 Sept</span></td>
+                              <td>
+                                <p class="m-0 font-primary">&#8358;44344</p>
+                              </td>
+                              <td class="text-end">
+                                <div class="button btn btn-primary">Done<i class="fa fa-check-circle ms-2"></i></div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td><img class="img-fluid img-40 rounded-circle" src="../assets/images/appointment/app-ent.jpg" alt="Image description">
+                                <div class="status-circle bg-primary"></div>
+                              </td>
+                              <td class="img-content-box"><span class="d-block">John Loren</span><span class="font-roboto">24 Sept</span></td>
+                              <td>
+                                <p class="m-0 font-primary">&#8358;44344</p>
+                              </td>
+                              <td class="text-end">
+                                <div class="button btn btn-danger">Pending<i class="fa fa-clock-o ms-2"></i></div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <hr class="my-3">
+                      <div class="text-center">
+                        <a href="pension-transactions" class="btn btn-xs btn-primary">See More</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 appointment-sec box-col-6">
+              <div class="col-xl-12 alert-sec">
+                <div class="card bg-img">
+                  <div class="card-header">
+                    <div class="header-top">
+                      <h5 class="m-0">Alert </h5>
+                      <div class="dot-right-icon">
+                        <a href="unapproved-companies">
+                          <i class="fa fa-ellipsis-h text-white"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <div class="body-bottom">
+                      <h6>303 companies are awaiting approval...</h6><span class="font-roboto">Lorem Ipsum is simply dummy...It is a long established fact that a reader will be distracted by </span>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -102,7 +237,7 @@
                               <thead>
                                 <tr>
                                   <th class="f-22">
-                                    Recent Transactions</th>
+                                    Recent Withdrawals</th>
                                   <th>Ref</th>
                                   <th>Date</th>
                                   <th>Amount</th>
@@ -115,7 +250,6 @@
                                     <div class="d-inline-block align-middle"><img class="img-40 m-r-15 rounded-circle align-top" src="../assets/images/avtar/7.jpg" alt="">
                                       <div class="status-circle bg-primary"></div>
                                       <div class="d-inline-block"><span>John keter</span>
-                                        <p class="font-roboto">Human Resources</p>
                                       </div>
                                     </div>
                                   </td>
@@ -129,7 +263,6 @@
                                     <div class="d-inline-block align-middle"><img class="img-40 m-r-15 rounded-circle align-top" src="../assets/images/avtar/7.jpg" alt="">
                                       <div class="status-circle bg-primary"></div>
                                       <div class="d-inline-block"><span>John keter</span>
-                                        <p class="font-roboto">Human Resources</p>
                                       </div>
                                     </div>
                                   </td>
@@ -143,7 +276,6 @@
                                     <div class="d-inline-block align-middle"><img class="img-40 m-r-15 rounded-circle align-top" src="../assets/images/avtar/7.jpg" alt="">
                                       <div class="status-circle bg-primary"></div>
                                       <div class="d-inline-block"><span>John keter</span>
-                                        <p class="font-roboto">Human Resources</p>
                                       </div>
                                     </div>
                                   </td>
@@ -157,7 +289,6 @@
                                     <div class="d-inline-block align-middle"><img class="img-40 m-r-15 rounded-circle align-top" src="../assets/images/avtar/7.jpg" alt="">
                                       <div class="status-circle bg-primary"></div>
                                       <div class="d-inline-block"><span>John keter</span>
-                                        <p class="font-roboto">Human Resources</p>
                                       </div>
                                     </div>
                                   </td>
@@ -191,6 +322,8 @@
   <?php include "includes/footer-resources.php"; ?>
 
   <script src="../assets/js/chart/apex-chart/apex-chart.js"></script>
+  <script src="../assets/js/chart/chartist/chartist.js"></script>
+  <script src="../assets/js/chart/chartist/chartist-plugin-tooltip.js"></script>
 
   <script>
     $(function() {
@@ -268,6 +401,158 @@
         options
       );
       chart4.render();
+
+
+
+      //small chart-1
+
+      new Chartist.Bar('.small-chart', {
+        labels: ['Q1', 'Q2', 'Q3', 'Q4', 'Q5', 'Q6', 'Q7'],
+        series: [
+          [400, 900, 800, 1000, 700, 1200, 300],
+          [1000, 500, 600, 400, 700, 200, 1100]
+        ]
+      }, {
+        plugins: [
+          Chartist.plugins.tooltip({
+            appendToBody: false,
+            className: "ct-tooltip"
+          })
+        ],
+        stackBars: true,
+        axisX: {
+          showGrid: false,
+          showLabel: false,
+          offset: 0
+        },
+        axisY: {
+          low: 0,
+          showGrid: false,
+          showLabel: false,
+          offset: 0,
+          labelInterpolationFnc: function(value) {
+            return (value / 1000) + 'k';
+          }
+        }
+      }).on('draw', function(data) {
+        if (data.type === 'bar') {
+          data.element.attr({
+            style: 'stroke-width: 3px'
+          });
+        }
+      });
+
+      //small-2
+
+      new Chartist.Bar('.small-chart1', {
+        labels: ['Q1', 'Q2', 'Q3', 'Q4', 'Q5', 'Q6', 'Q7'],
+        series: [
+          [400, 600, 900, 800, 1000, 1200, 500],
+          [1000, 800, 500, 600, 400, 200, 900]
+        ]
+      }, {
+        plugins: [
+          Chartist.plugins.tooltip({
+            appendToBody: false,
+            className: "ct-tooltip"
+          })
+        ],
+        stackBars: true,
+        axisX: {
+          showGrid: false,
+          showLabel: false,
+          offset: 0
+        },
+        axisY: {
+          low: 0,
+          showGrid: false,
+          showLabel: false,
+          offset: 0,
+          labelInterpolationFnc: function(value) {
+            return (value / 1000) + 'k';
+          }
+        }
+      }).on('draw', function(data) {
+        if (data.type === 'bar') {
+          data.element.attr({
+            style: 'stroke-width: 3px'
+          });
+        }
+      });
+      // small-3
+
+      new Chartist.Bar('.small-chart2', {
+        labels: ['Q1', 'Q2', 'Q3', 'Q4', 'Q5', 'Q6', 'Q7'],
+        series: [
+          [1100, 900, 600, 1000, 700, 1200, 300],
+          [300, 500, 800, 400, 700, 200, 1100]
+        ]
+      }, {
+        plugins: [
+          Chartist.plugins.tooltip({
+            appendToBody: false,
+            className: "ct-tooltip"
+          })
+        ],
+        stackBars: true,
+        axisX: {
+          showGrid: false,
+          showLabel: false,
+          offset: 0
+        },
+        axisY: {
+          low: 0,
+          showGrid: false,
+          showLabel: false,
+          offset: 0,
+          labelInterpolationFnc: function(value) {
+            return (value / 1000) + 'k';
+          }
+        }
+      }).on('draw', function(data) {
+        if (data.type === 'bar') {
+          data.element.attr({
+            style: 'stroke-width: 3px'
+          });
+        }
+      });
+      // small-4
+      new Chartist.Bar('.small-chart3', {
+        labels: ['Q1', 'Q2', 'Q3', 'Q4', 'Q5', 'Q6', 'Q7'],
+        series: [
+          [400, 600, 800, 1000, 700, 1100, 300],
+          [1000, 500, 600, 300, 700, 200, 1100]
+        ]
+      }, {
+        plugins: [
+          Chartist.plugins.tooltip({
+            appendToBody: false,
+            className: "ct-tooltip"
+          })
+        ],
+        stackBars: true,
+        axisX: {
+          showGrid: false,
+          showLabel: false,
+          offset: 0
+        },
+        axisY: {
+          low: 0,
+          showGrid: false,
+          showLabel: false,
+          offset: 0,
+          labelInterpolationFnc: function(value) {
+            return (value / 1000) + 'k';
+          }
+        }
+      }).on('draw', function(data) {
+        if (data.type === 'bar') {
+          data.element.attr({
+            style: 'stroke-width: 3px'
+          });
+        }
+      });
+
     })
   </script>
 </body>

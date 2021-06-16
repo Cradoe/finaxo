@@ -61,7 +61,6 @@
                                                     <th>S/N</th>
                                                     <th>Department</th>
                                                     <th>Date Registered</th>
-                                                    <th>Actions</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -69,57 +68,16 @@
                                                     <td>1</td>
                                                     <td>Edinburgh</td>
                                                     <td>2011/04/25</td>
-                                                    <td>
-                                                        <a href="staffs?department=1" class="btn btn-xs btn-primary" target="_blank">
-                                                            View Staffs
-                                                        </a>
-
-                                                        <a href="#" class="btn btn-danger confirm btn-xs">
-                                                            Delete
-                                                        </a>
-                                                    </td>
                                                 </tr>
                                                 <tr>
                                                     <td>1</td>
                                                     <td>Edinburgh</td>
                                                     <td>2011/04/25</td>
-                                                    <td>
-                                                        <a href="staffs?department=1" class="btn btn-xs btn-primary" target="_blank">
-                                                            View Staffs
-                                                        </a>
-
-                                                        <a href="#" class="btn btn-danger confirm btn-xs">
-                                                            Delete
-                                                        </a>
-                                                    </td>
                                                 </tr>
                                                 <tr>
                                                     <td>1</td>
                                                     <td>Edinburgh</td>
                                                     <td>2011/04/25</td>
-                                                    <td>
-                                                        <a href="staffs?department=1" class="btn btn-xs btn-primary" target="_blank">
-                                                            View Staffs
-                                                        </a>
-
-                                                        <a href="#" class="btn btn-danger confirm btn-xs">
-                                                            Delete
-                                                        </a>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>1</td>
-                                                    <td>Edinburgh</td>
-                                                    <td>2011/04/25</td>
-                                                    <td>
-                                                        <a href="staffs?department=1" class="btn btn-xs btn-primary" target="_blank">
-                                                            View Staffs
-                                                        </a>
-
-                                                        <a href="#" class="btn btn-danger confirm btn-xs">
-                                                            Delete
-                                                        </a>
-                                                    </td>
                                                 </tr>
                                             </tbody>
                                         </table>

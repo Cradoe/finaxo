@@ -62,7 +62,7 @@
                                                     <th>Transaction Ref</th>
                                                     <th>Amount</th>
                                                     <th>Date</th>
-                                                    <th>Departments</th>
+                                                    <th>Company</th>
                                                     <th>Status</th>
                                                     <th>Actions</th>
                                                 </tr>
@@ -73,12 +73,12 @@
                                                     <td>#3ujnf43uejri4</td>
                                                     <td>&#8358;9,300,082</td>
                                                     <td>2011/04/25</td>
-                                                    <td>45</td>
+                                                    <td>Flexidink</td>
                                                     <td>
                                                         <span class="badge badge-secondary">processing</span>
                                                     </td>
                                                     <td>
-                                                        <a href="pension-departments?id=2" class="btn btn-xs btn-primary" target="_blank">
+                                                        <a href="company-pension-records" class="btn btn-xs btn-primary" target="_blank">
                                                             View Details
                                                         </a>
                                                     </td>
@@ -88,12 +88,12 @@
                                                     <td>#3ujnf43uejri4</td>
                                                     <td>&#8358;9,300,082</td>
                                                     <td>2011/04/25</td>
-                                                    <td>45</td>
+                                                    <td>Flexidink</td>
                                                     <td>
                                                         <span class="badge badge-success">successful</span>
                                                     </td>
                                                     <td>
-                                                        <a href="pension-departments?id=2" class="btn btn-xs btn-primary" target="_blank">
+                                                        <a href="company-pension-records" class="btn btn-xs btn-primary" target="_blank">
                                                             View Details
                                                         </a>
                                                     </td>

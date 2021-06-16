@@ -18,12 +18,11 @@
         <li class="profile-nav onhover-dropdown p-0 me-0">
           <div class="media profile-media"><img class="b-r-10" src="../assets/images/dashboard/profile.jpg" alt="">
             <div class="media-body"><span>Emay Walter</span>
-              <p class="mb-0 font-roboto">Employee <i class="middle fa fa-angle-down"></i></p>
+              <p class="mb-0 font-roboto">Company <i class="middle fa fa-angle-down"></i></p>
             </div>
           </div>
           <ul class="profile-dropdown onhover-show-div">
-            <li><a href="account"><i data-feather="user"></i><span>Account </span></a></li>
-            <li><a href="logout"><i data-feather="log-in"> </i><span>Log in</span></a></li>
+            <li><a href="logout"><i data-feather="log-in"> </i><span>Logout</span></a></li>
           </ul>
         </li>
       </ul>

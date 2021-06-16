@@ -3,6 +3,23 @@
 
 <head>
     <?php include "includes/header-resources.php"; ?>
+    <style>
+        #chain-bg {
+            background-image: url("../assets/images/chain2.gif");
+            background-repeat: no-repeat;
+            background-size: contain;
+            min-height: 30vh;
+            background-position: center;
+        }
+
+        #approval-bg {
+            background-image: url("../assets/images/approved.jpg");
+            background-repeat: no-repeat;
+            background-size: contain;
+            min-height: 30vh;
+            background-position: center;
+        }
+    </style>
 </head>
 
 <body>
@@ -40,7 +57,7 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-sm-12">
-                            <div class="card">
+                            <div class="card" id="details-card">
                                 <div class="card-header">
                                     <h5>January 2021</h5><span>lorem ipsum dolor sit amet, consectetur adipisicing elit</span>
                                 </div>
@@ -68,6 +85,28 @@
                                             <button id="btn-pay" class="btn btn-secondary btn-lg">Payment Process</button>
                                         </form>
                                     </div>
+                                </div>
+                            </div>
+                            <div class="card" id="transfer-block-card" style="display: none;">
+                                <div class="card-header">
+                                    <h5 id="transfer-block-header">Processing...</h5><span>lorem ipsum dolor sit amet, consectetur adipisicing elit</span>
+                                </div>
+                                <div class="card-body" id="chain-bg">
+                                </div>
+                                <div class="card-footer text-center">
+                                    <h2 id="counter-text"></h2>
+                                </div>
+                            </div>
+
+                            <div class="card" id="receipt-card" style="display: none;">
+                                <div class="card-header">
+                                    <h5>Transaction Successful...</h5><span>lorem ipsum dolor sit amet, consectetur adipisicing elit</span>
+                                </div>
+                                <div class="card-body" id="approval-bg">
+
+                                </div>
+                                <div class="card-footer text-center">
+                                    <h5 id="hash-text"></h5>
                                 </div>
                             </div>
                         </div>
@@ -105,6 +144,8 @@
                     Math.floor(getRandomNumber()).toString();
                 makePayment();
             });
+
+
 
             function makePayment() {
                 savePaymentDetailsToServer(txRef);
@@ -148,6 +189,9 @@
 
             function savePaymentDetailsToServer(data) {
                 showTransferBlock();
+                setTimeout(() => {
+                    showReceiptBlock(txRef);
+                }, 2000);
                 return;
                 try {
                     $.ajax({
@@ -160,7 +204,9 @@
                         },
                         success: (response) => {
                             if (response.status == 'ok' && response.success == true) {
-                                showReceiptBlock(data.txref);
+                                setTimeout(() => {
+                                    showReceiptBlock(data.txref);
+                                }, 3000);
                             } else {
                                 handleServerError(response);
                             }
@@ -175,10 +221,20 @@
             }
 
             function showTransferBlock() {
+                $('#details-card').fadeOut('slow', () => {
+                    $('#transfer-block-card').slideDown('slow', function() {});
+                });
+
 
             }
 
             function showReceiptBlock(txref) {
+                timeOutLoader(() => {
+                    $('#hash-text').text(`Transaction Ref: ${txRef}`);
+                    $('#transfer-block-card').fadeOut('slow', () => {
+                        $('#receipt-card').slideDown();
+                    });
+                });
 
             }
 
@@ -188,6 +244,21 @@
                     ),
                     console.error(e);
             }
+
+            function timeOutLoader(fn) {
+                let counter = 0;
+                const interval = setInterval(() => {
+                    if (counter <= 100) {
+                        $('#counter-text').text(`${counter}%`);
+                        counter++;
+                    } else {
+                        fn();
+                        clearInterval(interval);
+                    }
+                }, 100);
+            }
+
+
 
         })
     </script>

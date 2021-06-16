@@ -2,7 +2,7 @@
   <div class="header-wrapper row m-0">
 
     <div class="header-logo-wrapper col-auto p-0">
-      <div class="logo-wrapper"><a href="index.html"><img class="img-fluid" src="../../images/logo/logo.png" alt=""></a></div>
+      <div class="logo-wrapper"><a href="index.html"><img class="img-fluid" src="../../images/logo.svg" alt=""></a></div>
       <div class="toggle-sidebar"><i class="status_toggle middle sidebar-toggle" data-feather="align-center"></i></div>
     </div>
 

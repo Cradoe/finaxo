@@ -5,7 +5,7 @@
     <?php include "includes/header-resources.php"; ?>
     <style>
         #chain-bg {
-            background-image: url("../assets/images/chain2.gif");
+            background-image: url("../assets/images/chain.gif");
             background-repeat: no-repeat;
             background-size: contain;
             min-height: 30vh;

@@ -25,18 +25,18 @@
 
           <li class="sidebar-main-title">
             <div>
-              <h6 class="lan-8">Staffs</h6>
+              <h6 class="lan-8">Companies</h6>
               <p class="lan-9">Manage your employees</p>
             </div>
           </li>
 
           <li class="sidebar-list">
-            <a class="sidebar-link sidebar-title link-nav" href="new-staff"><i data-feather="home"></i><span>Register New</span></a>
+            <a class="sidebar-link sidebar-title link-nav" href="unapproved-companies"><i data-feather="home"></i><span>Unapproved Companies</span></a>
 
           </li>
 
           <li class="sidebar-list">
-            <a class="sidebar-link sidebar-title link-nav" href="staffs"><i data-feather="home"></i><span>View Staffs</span></a>
+            <a class="sidebar-link sidebar-title link-nav" href="companies"><i data-feather="home"></i><span>View Comapnies</span></a>
           </li>
           <li class="sidebar-main-title">
             <div>

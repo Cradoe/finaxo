@@ -33,13 +33,13 @@
                     <div class="page-title">
                         <div class="row">
                             <div class="col-6">
-                                <h3>Pension</h3>
+                                <h3>Companies</h3>
                             </div>
                             <div class="col-6">
                                 <ol class="breadcrumb">
                                     <li class="breadcrumb-item"><a href="index.html"> <i data-feather="home"></i></a></li>
                                     <li class="breadcrumb-item">Pages</li>
-                                    <li class="breadcrumb-item active">Pension</li>
+                                    <li class="breadcrumb-item active">Companies</li>
                                 </ol>
                             </div>
                         </div>
@@ -51,7 +51,7 @@
                         <div class="col-sm-12">
                             <div class="card">
                                 <div class="card-header">
-                                    <h5>Pension</h5><span>See record of funds remited by your employer.</span>
+                                    <h5>Unapproved Companies</h5><span>See record of funds remited by your employer.</span>
                                 </div>
                                 <div class="card-body">
                                     <div class="table-responsive">
@@ -59,42 +59,32 @@
                                             <thead>
                                                 <tr>
                                                     <th>S/N</th>
-                                                    <th>Transaction Ref</th>
-                                                    <th>Amount</th>
-                                                    <th>Date</th>
-                                                    <th>Departments</th>
-                                                    <th>Status</th>
-                                                    <th>Actions</th>
+                                                    <th>Logo</th>
+                                                    <th>Reg NO</th>
+                                                    <th>Company Name</th>
+                                                    <th>Email</th>
+                                                    <th>Department</th>
+                                                    <th>Date Registered</th>
+                                                    <th>Action</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
                                                 <tr>
                                                     <td>1</td>
-                                                    <td>#3ujnf43uejri4</td>
-                                                    <td>&#8358;9,300,082</td>
-                                                    <td>2011/04/25</td>
-                                                    <td>45</td>
                                                     <td>
-                                                        <span class="badge badge-secondary">processing</span>
+                                                        <img src="../assets/images/avtar/3.jpg" class="img-avatar" alt="">
                                                     </td>
+                                                    <td>RC##23</td>
+                                                    <td>Edinburgh</td>
+                                                    <td>61</td>
+                                                    <td>Marketing</td>
+                                                    <td>2011/04/25</td>
                                                     <td>
-                                                        <a href="pension-departments?id=2" class="btn btn-xs btn-primary" target="_blank">
-                                                            View Details
+                                                        <a href="company-details" class="btn btn-xs btn-primary" target="_blank">
+                                                            View Profile
                                                         </a>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>1</td>
-                                                    <td>#3ujnf43uejri4</td>
-                                                    <td>&#8358;9,300,082</td>
-                                                    <td>2011/04/25</td>
-                                                    <td>45</td>
-                                                    <td>
-                                                        <span class="badge badge-success">successful</span>
-                                                    </td>
-                                                    <td>
-                                                        <a href="pension-departments?id=2" class="btn btn-xs btn-primary" target="_blank">
-                                                            View Details
+                                                        <a href="approve" class="btn btn-xs btn-success confirm">
+                                                            Approve
                                                         </a>
                                                     </td>
                                                 </tr>

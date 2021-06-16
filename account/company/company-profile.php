@@ -43,13 +43,13 @@
                         <div class="row">
                             <!-- user profile first-style start-->
                             <div class="col-sm-12">
-                                <div class="card hovercard text-center">
+                                <div class="card hovercard">
                                     <div class="cardheader"></div>
-                                    <div class="user-image">
+                                    <div class="user-image text-center">
                                         <div class="avatar"><img alt="" src="../assets/images/user/7.jpg"></div>
                                     </div>
                                     <div class="info">
-                                        <div class="row">
+                                        <div class="row text-center">
                                             <div class="col-sm-6 col-lg-4 order-sm-1 order-xl-0">
                                                 <div class="row">
                                                     <div class="col-md-6">
@@ -86,7 +86,7 @@
                                             </div>
                                         </div>
                                         <hr>
-                                        <div class="follow">
+                                        <div class="follow text-center">
                                             <div class="row">
                                                 <div class="col-6 text-md-end border-right">
                                                     <div class="follow-num counter">Staffs</div>
@@ -105,6 +105,26 @@
                                                 </div>
                                             </div>
                                         </div>
+                                        <hr>
+                                        <div id="company-details">
+                                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat unde expedita nesciunt nisi magni mollitia. Corrupti quaerat et, quas quidem reiciendis harum dolor aliquam architecto rem iste illum, ullam similique?
+
+                                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat unde expedita nesciunt nisi magni mollitia. Corrupti quaerat et, quas quidem reiciendis harum dolor aliquam architecto rem iste illum, ullam similique?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat unde expedita nesciunt nisi magni mollitia. Corrupti quaerat et, quas quidem reiciendis harum dolor aliquam architecto rem iste illum, ullam similique?
+
+                                                <button class="btn btn-secondary btn-xs" id="edit-btn">Edit Description</button>
+                                        </div>
+                                        <div id="edit-about-company" style="display: none;">
+                                            <form action="" method="post">
+                                                <div class="form-group">
+                                                    <label for="">Company's description</label>
+                                                    <textarea name="description" class="form-control"></textarea>
+                                                </div>
+                                                <div class="form-group mt-5 text-center">
+                                                    <button type="button" class="btn btn-warning" id="cancel-edit">Cancel</button>
+                                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                                </div>
+                                            </form>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -120,6 +140,21 @@
     </div>
     <?php include "includes/footer-resources.php"; ?>
     <!-- Plugin used-->
+
+    <script>
+        $(function() {
+            $('#edit-btn').click(function() {
+                $('#company-details').fadeOut('slow', () => {
+                    $('#edit-about-company').slideDown();
+                })
+            });
+            $('#cancel-edit').click(function() {
+                $('#edit-about-company').fadeOut('slow', () => {
+                    $('#company-details').slideDown();
+                })
+            });
+        })
+    </script>
 </body>
 
 </html>

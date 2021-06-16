@@ -33,13 +33,13 @@
                     <div class="page-title">
                         <div class="row">
                             <div class="col-6">
-                                <h3>Companies</h3>
+                                <h3>Employees</h3>
                             </div>
                             <div class="col-6">
                                 <ol class="breadcrumb">
                                     <li class="breadcrumb-item"><a href="index.html"> <i data-feather="home"></i></a></li>
                                     <li class="breadcrumb-item">Pages</li>
-                                    <li class="breadcrumb-item active">Companies</li>
+                                    <li class="breadcrumb-item active">Employees</li>
                                 </ol>
                             </div>
                         </div>
@@ -51,7 +51,7 @@
                         <div class="col-sm-12">
                             <div class="card">
                                 <div class="card-header">
-                                    <h5>Registered Companies</h5><span>See record of funds remited by your employer.</span>
+                                    <h5>Registered Employees</h5><span>See record of funds remited by your employer.</span>
                                 </div>
                                 <div class="card-body">
                                     <div class="table-responsive">
@@ -63,7 +63,7 @@
                                                     <th>Staff ID</th>
                                                     <th>Fullname</th>
                                                     <th>Email</th>
-                                                    <th>Department</th>
+                                                    <th>Present Company</th>
                                                     <th>Date Registered</th>
                                                     <th>Action</th>
                                                 </tr>
@@ -77,7 +77,7 @@
                                                     <td>#jeifjwi383djnu393_30</td>
                                                     <td>Edinburgh</td>
                                                     <td>61</td>
-                                                    <td>Marketing</td>
+                                                    <td>Flexidink</td>
                                                     <td>2011/04/25</td>
                                                     <td>
                                                         <a href="employee-profile" class="btn btn-xs btn-primary" target="_blank">
@@ -96,7 +96,7 @@
                                                     <td>#jeifjwi383djnu393_30</td>
                                                     <td>Edinburgh</td>
                                                     <td>61</td>
-                                                    <td>Marketing</td>
+                                                    <td>Flexidink</td>
                                                     <td>2011/04/25</td>
                                                     <td>
                                                         <a href="employee-profile" class="btn btn-xs btn-primary" target="_blank">
@@ -115,7 +115,7 @@
                                                     <td>#jeifjwi383djnu393_30</td>
                                                     <td>Edinburgh</td>
                                                     <td>61</td>
-                                                    <td>Marketing</td>
+                                                    <td>Flexidink</td>
                                                     <td>2011/04/25</td>
                                                     <td>
                                                         <a href="employee-profile" class="btn btn-xs btn-primary" target="_blank">

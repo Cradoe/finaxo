@@ -39,10 +39,13 @@
           </li>
 
           <li class="sidebar-list">
-            <a class="sidebar-link sidebar-title link-nav" href="companies"><i data-feather="home"></i><span>View Comapnies</span></a>
+            <a class="sidebar-link sidebar-title link-nav" href="companies"><i data-feather="home"></i><span>View Companies</span></a>
           </li>
           <li class="sidebar-list">
             <a class="sidebar-link sidebar-title link-nav" href="pension-transactions"><i data-feather="home"></i><span>Pension Transations</span></a>
+          </li>
+          <li class="sidebar-list">
+            <a class="sidebar-link sidebar-title link-nav" href="unpaid-pensions"><i data-feather="home"></i><span>Unpaid Pensions</span></a>
           </li>
 
           </li>
@@ -53,7 +56,10 @@
             </div>
           </li>
           <li class="sidebar-list">
-            <a class="sidebar-link sidebar-title link-nav" href="pension-transactions"><i data-feather="home"></i><span>Pension Transations</span></a>
+            <a class="sidebar-link sidebar-title link-nav" href="employees"><i data-feather="home"></i><span>Employees</span></a>
+          </li>
+          <li class="sidebar-list">
+            <a class="sidebar-link sidebar-title link-nav" href="pension-withdrawals"><i data-feather="home"></i><span>Pension Withdrawals</span></a>
           </li>
           <li class="sidebar-main-title">
             <div>

@@ -33,13 +33,13 @@
                     <div class="page-title">
                         <div class="row">
                             <div class="col-6">
-                                <h3>Companies</h3>
+                                <h3>Upaid Pensions</h3>
                             </div>
                             <div class="col-6">
                                 <ol class="breadcrumb">
                                     <li class="breadcrumb-item"><a href="index.html"> <i data-feather="home"></i></a></li>
                                     <li class="breadcrumb-item">Pages</li>
-                                    <li class="breadcrumb-item active">Companies</li>
+                                    <li class="breadcrumb-item active">Pension</li>
                                 </ol>
                             </div>
                         </div>
@@ -51,7 +51,22 @@
                         <div class="col-sm-12">
                             <div class="card">
                                 <div class="card-header">
-                                    <h5>Registered Companies</h5><span>See record of funds remited by your employer.</span>
+                                    <div class="header-top">
+                                        <div>
+                                            <h5>Pension</h5><span>See record of funds remited by your employer.</span>
+                                        </div>
+                                        <div class="card-header-right-icon">
+                                            <div class="dropdown">
+                                                <button class="btn dropdown-toggle" id="dropdownMenuButton" type="button" data-bs-toggle="dropdown" aria-expanded="false">Filter</button>
+                                                <div class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton">
+                                                    <a class="dropdown-item" href="#">This Month</a>
+                                                    <a class="dropdown-item" href="#">Last Month</a>
+                                                    <a class="dropdown-item" href="#">This Year</a>
+                                                    <a class="dropdown-item" href="#">Last Year</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="card-body">
                                     <div class="table-responsive">
@@ -59,13 +74,11 @@
                                             <thead>
                                                 <tr>
                                                     <th>S/N</th>
-                                                    <th>Profile Picture</th>
-                                                    <th>Staff ID</th>
-                                                    <th>Fullname</th>
-                                                    <th>Email</th>
-                                                    <th>Department</th>
-                                                    <th>Date Registered</th>
-                                                    <th>Action</th>
+                                                    <th>Logo</th>
+                                                    <th>Company Name</th>
+                                                    <th>Month</th>
+                                                    <th>Amount</th>
+                                                    <th>Actions</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -74,17 +87,12 @@
                                                     <td>
                                                         <img src="../assets/images/avtar/3.jpg" class="img-avatar" alt="">
                                                     </td>
-                                                    <td>#jeifjwi383djnu393_30</td>
-                                                    <td>Edinburgh</td>
-                                                    <td>61</td>
-                                                    <td>Marketing</td>
-                                                    <td>2011/04/25</td>
+                                                    <td>Flexidink</td>
+                                                    <td>January</td>
+                                                    <td>&#8358;9,300,082</td>
                                                     <td>
-                                                        <a href="employee-profile" class="btn btn-xs btn-primary" target="_blank">
-                                                            View Profile
-                                                        </a>
-                                                        <a href="staff-pension-records?id=222" class="btn btn-xs btn-success" target="_blank">
-                                                            Pension Records
+                                                        <a href="company-details" class="btn btn-xs btn-primary" target="_blank">
+                                                            View Details
                                                         </a>
                                                     </td>
                                                 </tr>
@@ -93,36 +101,12 @@
                                                     <td>
                                                         <img src="../assets/images/avtar/3.jpg" class="img-avatar" alt="">
                                                     </td>
-                                                    <td>#jeifjwi383djnu393_30</td>
-                                                    <td>Edinburgh</td>
-                                                    <td>61</td>
-                                                    <td>Marketing</td>
-                                                    <td>2011/04/25</td>
+                                                    <td>Flexidink</td>
+                                                    <td>January</td>
+                                                    <td>&#8358;9,300,082</td>
                                                     <td>
-                                                        <a href="employee-profile" class="btn btn-xs btn-primary" target="_blank">
-                                                            View Profile
-                                                        </a>
-                                                        <a href="staff-pension-records?id=222" class="btn btn-xs btn-success" target="_blank">
-                                                            Pension Records
-                                                        </a>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>1</td>
-                                                    <td>
-                                                        <img src="../assets/images/avtar/3.jpg" class="img-avatar" alt="">
-                                                    </td>
-                                                    <td>#jeifjwi383djnu393_30</td>
-                                                    <td>Edinburgh</td>
-                                                    <td>61</td>
-                                                    <td>Marketing</td>
-                                                    <td>2011/04/25</td>
-                                                    <td>
-                                                        <a href="employee-profile" class="btn btn-xs btn-primary" target="_blank">
-                                                            View Profile
-                                                        </a>
-                                                        <a href="staff-pension-records?id=222" class="btn btn-xs btn-success" target="_blank">
-                                                            Pension Records
+                                                        <a href="company-details" class="btn btn-xs btn-primary" target="_blank">
+                                                            View Details
                                                         </a>
                                                     </td>
                                                 </tr>

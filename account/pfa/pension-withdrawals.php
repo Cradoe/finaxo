@@ -75,42 +75,23 @@
                                                 <tr>
                                                     <th>S/N</th>
                                                     <th>Transaction Ref</th>
+                                                    <th>Fullname</th>
+                                                    <th>Company</th>
                                                     <th>Amount</th>
                                                     <th>Date</th>
-                                                    <th>Company</th>
                                                     <th>Status</th>
-                                                    <th>Actions</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
                                                 <tr>
                                                     <td>1</td>
                                                     <td>#3ujnf43uejri4</td>
+                                                    <td>Ismail Obadimu</td>
+                                                    <td>Flexidink</td>
                                                     <td>&#8358;9,300,082</td>
                                                     <td>2011/04/25</td>
-                                                    <td>Flexidink</td>
-                                                    <td>
-                                                        <span class="badge badge-secondary">processing</span>
-                                                    </td>
-                                                    <td>
-                                                        <a href="company-pension-records" class="btn btn-xs btn-primary" target="_blank">
-                                                            View Details
-                                                        </a>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>1</td>
-                                                    <td>#3ujnf43uejri4</td>
-                                                    <td>&#8358;9,300,082</td>
-                                                    <td>2011/04/25</td>
-                                                    <td>Flexidink</td>
                                                     <td>
                                                         <span class="badge badge-success">successful</span>
-                                                    </td>
-                                                    <td>
-                                                        <a href="company-pension-records" class="btn btn-xs btn-primary" target="_blank">
-                                                            View Details
-                                                        </a>
                                                     </td>
                                                 </tr>
                                             </tbody>

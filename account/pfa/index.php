@@ -23,7 +23,7 @@
     <!-- Responsive css-->
     <link rel="stylesheet" type="text/css" href="../assets/css/responsive.css">
     <style>
-        
+
     </style>
 </head>
 
@@ -64,7 +64,6 @@
                                     <button class="btn btn-primary btn-block w-100" name="submit" type="submit">Sign in</button>
                                 </div>
 
-                                <p class="mt-4 mb-0 text-center">Don't have account?<a class="ms-2" href="register">Create Account</a></p>
                             </form>
                         </div>
                     </div>
